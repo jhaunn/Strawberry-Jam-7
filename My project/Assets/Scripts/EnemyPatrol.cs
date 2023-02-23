@@ -12,9 +12,12 @@ public class EnemyPatrol : MonoBehaviour
     [SerializeField] private bool isMovingRight = true;
 
     [SerializeField] private Transform groundCheckPos;
+    [SerializeField] private Transform wallCheckPos;
     [SerializeField] private float checkRadius = 0.25f;
     [SerializeField] private LayerMask whatIsGround;
+    [SerializeField] private LayerMask whatIsWall;
     private bool isGrounded;
+    private bool isWalled;
 
     [SerializeField] private float waitTime;
     private float currentWaitTime;
@@ -32,8 +35,9 @@ public class EnemyPatrol : MonoBehaviour
     private void FixedUpdate()
     {
         isGrounded = Physics2D.OverlapCircle(groundCheckPos.position, checkRadius, whatIsGround);
+        isWalled = Physics2D.OverlapCircle(wallCheckPos.position, checkRadius, whatIsWall);
 
-        if (isGrounded)
+        if (isGrounded && !isWalled)
         {
             if (isMovingRight)
             {
