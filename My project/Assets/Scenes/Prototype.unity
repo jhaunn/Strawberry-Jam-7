@@ -774,11 +774,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!4 &645231240 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1526981262035369514, guid: 00825ac3c8f21b840b1db5150d178d23, type: 3}
-  m_PrefabInstance: {fileID: 1526981262861518584}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &658857927
 GameObject:
   m_ObjectHideFlags: 0
@@ -1949,37 +1944,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1520079821
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1520079822}
-  m_Layer: 0
-  m_Name: Wall Check
-  m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1520079822
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1520079821}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 645231240}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1531899815
 GameObject:
   m_ObjectHideFlags: 0
@@ -2441,14 +2405,6 @@ PrefabInstance:
     - target: {fileID: 1526981262035369514, guid: 00825ac3c8f21b840b1db5150d178d23, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1526981262035369515, guid: 00825ac3c8f21b840b1db5150d178d23, type: 3}
-      propertyPath: wallCheckPos
-      value: 
-      objectReference: {fileID: 1520079822}
-    - target: {fileID: 1526981262035369515, guid: 00825ac3c8f21b840b1db5150d178d23, type: 3}
-      propertyPath: whatIsWall.m_Bits
-      value: 63
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00825ac3c8f21b840b1db5150d178d23, type: 3}
